@@ -8,98 +8,75 @@
     <title>Formulario de cadastro</title>
 </head>
 <body>
-    <main class="conteudo">
-        <section class="conteudo-formulario">
-            <div class="informacao-formulario">
-                    <h1>Faça parte da nossa equipe!</h1>
-                    <h2>Realize seu cadastro agora mesmo.</h2>
+        <div class="container">
+            <div class="form-image">
+                <img src="src/imagens/undraw_reminder_re_fe15.svg" alt="Cadastro">
             </div>
-            <div class="formulario">
+            <div class="form">
                 <form action="#">
-                    <h1 class="titulo">Cadastre-se!</h1>
-                    <ul>
-                        <li>
-                            <label for="name">Nome:</label>
-                        </li>
-                        <li>
-                            <input type="text" name="nome" id="nome" required>                            
-                        </li>
-                        <li>
+                    <div class="form-header">
+                        <div class="titulo">
+                            <h1>Cadastre-se</h1>
+                        </div>
+                        <div class="login-buttom">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="primeiro-nome" placeholder="Informe seu nome" required>
+                        </div>
+                    
+                    
+                        <div class="input-box">
                             <label for="sobrenome">Sobrenome:</label>
-                        </li>
-                        <li>
-                            <input type="text" name="sobrenome" id="sobrenome" required>
-                        </li>
-                        <li>
-                            <label class="titulo-label">Sexo:</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="sexo" id="masculino" value="masculino" required>
-                            <label for="masculino">Masculino</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="sexo" id="feminino" value="feminino" required>
-                            <label for="feminino">Feminino</label>
-                        </li>
-                        <li>
-                            <label for="endereco">Endereço:</label>
-                        </li>
-                        <li>
-                            <input type="text" name="endereco" id="endereco" required>
-                        </li>
-                        <li>
-                            <label for="telefone">Telefone:</label>
-                        </li>
-                        <li>
-                            <input type="tel" name="telefone" id="telefone" maxlength="11" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
-                        </li>
-                        <li>
-                            <label for="mail">Email:</label>
-                        </li>
-                        <li>
-                            <input type="email" name="mail" id="mail" required>
-                        </li>
-                        <li>
-                            <label class="titulo-label">Idade:</label>
-                        </li>
-                        <li class="radio">
-                            <input type="radio" name="idade" id="idade1" value="30" required>
-                            <label for="idade1">0 - 30</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="idade" id="idade2" value="60" required>
-                            <label for="idade2">31 - 60</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="idade" id="idade3" value="100" required>
-                            <label for="idade3">61 - 100</label>
-                        </li>
-                        <li>
-                            <label class="titulo-label">Linguagens</label>
-                        </li>
-                        <li class="checkbox">
-                            <input type="checkbox" name="linguagem" id="html">
-                            <label for="html">HTML</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="linguagem" id="css">
-                            <label for="css">CSS</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="linguagem" id="javascript">
-                            <label for="javascript">Javascript</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="eceito" id="politicas" value="aceito" required>
-                            <label for="aceito">Aceito os termos de uso do site!</label>
-                        </li>
-                        <li>
-                            <input type="submit" value="Enviar" class="btn">
-                        </li>
-                    </ul>
+                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe seu sobrenome" required>
+                        </div>
+                    
+                    
+                        <div class="input-box">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Informe se email" required>
+                        </div>
+                    
+                        <div class="input-box">
+                            <label for="celular">Celular:</label>
+                            <input type="tel" name="celular" id="tel" placeholder="(xx)xxxx-xxxx" pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}" required>
+                        </div>
+                    
+                        <div class="input-box">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" id="password" placeholder="Insira uma senha" required>
+                        </div>
+                    
+                        <div class="input-box">
+                            <label for="confirma-senha">Confirme a senha:</label>
+                            <input type="password" name="confirma-senha" id="confirma-senha" placeholder="Confirme a senha" id="conf-password" required>
+                        </div>
+                    </div>
+
+                    <div class="generos">
+                        <div class="titulo-genero">
+                            <h6>Gênero</h6>
+                        </div>
+                        <div class="grupo-genero">
+                            <div class="genero-input">
+                                <input type="radio" name="genero" id="genero">
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div class="genero-input">
+                                <input type="radio" name="genero" id="genero">
+                                <label for="feminino">feminino</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="submit-button-area">
+                        <button><a href="#">Continuar</a></button>
+                    </div>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
 </body>
 </html>
