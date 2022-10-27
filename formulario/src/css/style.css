@@ -8,6 +8,7 @@
 }
 body{
     width: 100vw;
+    min-height: 900px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,6 +17,7 @@ body{
 }
 .container{
     width: 80%;
+    min-height: 600px;
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
@@ -159,8 +161,11 @@ body{
     .form{
         width: 100%;
     }
+    .form-header{
+        margin-top: 1rem;
+    }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1070px){
     .container{
         width: 90%;
         height: auto;
@@ -168,6 +173,17 @@ body{
     .input-group{
         flex-direction: column;
         flex-wrap: nowrap;
-        padding-right: 5rem;
+    }
+    .input-box{
+        width:100%;
+    }
+    .form-header{
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-header button{
+        margin-top: 1rem;
+        width: 100%;
     }
 }
